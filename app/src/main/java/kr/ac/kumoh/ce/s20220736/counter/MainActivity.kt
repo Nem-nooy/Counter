@@ -19,21 +19,21 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         setContentView(main.root)
 
-        main.btnAdd.setOnClickListener {
-            main.txtCount.text = "${++count}"       // Python's f-stringLIKE
-//            main.txtCount.text = (++count).toString()
-        }
-
-        main.btnSub.setOnClickListener {
-            if (count > 0)
-                main.txtCount.text = "${--count}"       // Python's f-stringLIKE
-//            main.txtCount.text = (--count).toString()
-            else
-            {
-                val toast = Toast.makeText(this@MainActivity, "음수 불가능!", Toast.LENGTH_SHORT)
-                toast.show()
-            }
-        }
+//        main.btnAdd.setOnClickListener {
+//            main.txtCount.text = "${++count}"       // Python's f-stringLIKE
+////            main.txtCount.text = (++count).toString()
+//        }
+//
+//        main.btnSub.setOnClickListener {
+//            if (count > 0)
+//                main.txtCount.text = "${--count}"       // Python's f-stringLIKE
+////            main.txtCount.text = (--count).toString()
+//            else
+//            {
+//                val toast = Toast.makeText(this@MainActivity, "음수 불가능!", Toast.LENGTH_SHORT)
+//                toast.show()
+//            }
+//        }
 
         main.btnReset.setOnClickListener {
             count = 0
